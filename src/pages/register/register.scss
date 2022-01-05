@@ -1,0 +1,46 @@
+.login, .forget, .register{
+    padding:10px 20px;
+    background-color: aliceblue;
+    margin:0 auto;
+    .logo{
+        text-align: center;
+    }
+    .form{
+        .form2{
+            display: none;
+            .back-ward{
+                cursor: pointer;
+            }
+        }
+        .forget-pass{
+            margin:10px auto;
+            text-align: center;
+            a{
+                text-decoration: none;
+            }
+        }
+        .form-style{
+            position: relative;
+            margin:2em 0;
+            label{
+                position: absolute;
+                top:5px;
+                margin-left: 1em;
+                transition: .3s;
+            }
+            input:valid,input:focus,input:hover{
+                & + label{
+                   top:-0.8em; 
+                }
+            }
+        }
+        .control{
+            margin:10px 0;
+            display: flex;
+            justify-content: space-between;
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+}

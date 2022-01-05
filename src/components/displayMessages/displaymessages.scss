@@ -1,0 +1,41 @@
+// sm < 576, small >= 576, medium >= 768
+// large >= 992, extra >= 1200
+$border:rgb(231, 225, 225);
+
+.display{
+    .header{
+        // padding:14px 16px;
+        border-bottom: 1px solid $border;
+        i{
+            font-size: 1.5em;
+            border: 1px solid black;
+            border-radius: 50%;
+            padding:10px;
+            color:white;
+        }
+        .tag{
+            cursor: pointer;
+            padding:10px 6px;
+            &:hover{
+                background-color: rgb(213, 231, 255);
+            }
+        }
+    }
+    .selector{
+        width: 100%;
+        padding:14px 10px;
+        cursor: pointer;
+        text-overflow: clip;
+        white-space: nowrap;
+        &:hover{
+            background-color: azure;
+        }
+        img{
+            width:50px;
+            border:1px solid $border;
+        }
+        span{
+            font-size: 14px;
+        }
+    }
+}

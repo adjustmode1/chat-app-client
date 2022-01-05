@@ -1,0 +1,29 @@
+.login, .forget, .register {
+  padding: 10px 20px;
+  background-color: aliceblue;
+  margin: 0 auto; }
+  .login .logo, .forget .logo, .register .logo {
+    text-align: center; }
+  .login .form .forget-pass, .forget .form .forget-pass, .register .form .forget-pass {
+    margin: 10px auto;
+    text-align: center; }
+    .login .form .forget-pass a, .forget .form .forget-pass a, .register .form .forget-pass a {
+      text-decoration: none; }
+  .login .form .form-style, .forget .form .form-style, .register .form .form-style {
+    position: relative;
+    margin: 2em 0; }
+    .login .form .form-style label, .forget .form .form-style label, .register .form .form-style label {
+      position: absolute;
+      top: 5px;
+      margin-left: 1em;
+      transition: .3s; }
+    .login .form .form-style input:valid + label, .login .form .form-style input:focus + label, .login .form .form-style input:hover + label, .forget .form .form-style input:valid + label, .forget .form .form-style input:focus + label, .forget .form .form-style input:hover + label, .register .form .form-style input:valid + label, .register .form .form-style input:focus + label, .register .form .form-style input:hover + label {
+      top: -0.8em; }
+  .login .form .control, .forget .form .control, .register .form .control {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between; }
+    .login .form .control a, .forget .form .control a, .register .form .control a {
+      text-decoration: none; }
+
+/*# sourceMappingURL=login.css.map */

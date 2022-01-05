@@ -4,9 +4,29 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+//router
+import {BrowserRouter} from 'react-router-dom';
+
+//cookie
+import {CookiesProvider} from 'react-cookie';
+
+//redux 
+import {createStore} from 'redux';
+import {Provider} from 'react-redux';
+import indexReducer from './reducers/index';
+
+
+const appStore = createStore(indexReducer);
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={appStore} >
+      <CookiesProvider>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </CookiesProvider>
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

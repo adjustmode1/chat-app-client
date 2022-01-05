@@ -1,0 +1,31 @@
+div#addgroup{
+    .modal-body{
+        height: 60vh;
+        overflow: scroll;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+        .list-friend{
+            .list-group{
+                .tag-friend-item{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    margin-right: 5px;
+                    .tag-friend{
+                        width:100%;
+                        align-items: center;
+                        display:flex;
+                        img{
+                            margin-right: 5px;
+                            width:50px;
+                        }
+                    }
+                    &:hover{
+                        border:1px solid black;
+                    }
+                }
+            }
+        }
+    }
+}

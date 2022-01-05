@@ -1,0 +1,13 @@
+.modal-body{
+    &__infor{
+        .head{
+            text-align: center;
+            img{
+                width: 60px;
+            }
+            i{
+                cursor: pointer;
+            }
+        }
+    }
+}
